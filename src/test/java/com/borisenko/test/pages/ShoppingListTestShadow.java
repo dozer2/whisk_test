@@ -59,7 +59,7 @@ public class ShoppingListTestShadow {
                 .addItemToActiveShoppingList(itemName)
                 .checkExistItemInActiveShoppingList(itemName);
     }
-   // bad practics, because each test must be atomic. Also ordering - bad practics (
+   // bad practics, because each test must be atomic(if run on multithreding you can get bugs). Also ordering - bad practics (
     @Test(priority = 2)
     public void deleteToShoppingList(){
         shoppingListPageSteps
