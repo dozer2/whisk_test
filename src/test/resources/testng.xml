@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5" data-provider-thread-count="1">
+	<test name="UI test">
+		<parameter name="path" value="/"/>
+		<classes>
+		    <class name="com.borisenko.test.pages.ShoppingListTest"/>
+			<class name="com.borisenko.test.pages.ShoppingListTestShadow"/>
+		</classes>
+	</test>
+	<test name="api test">
+		<classes>
+			<class name="com.borisenko.test.api.ApiTests"/>
+		</classes>
+	</test>
+</suite>
